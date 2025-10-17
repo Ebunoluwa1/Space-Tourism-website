@@ -14,7 +14,7 @@ const Layout = ({ children }: LayoutProps ) => {
 
   const {isOpen, onOpen, onClose} = useDisclosure();
    const MotionVStack = motion(VStack);
-  //  const MotionBox = motion(Box);
+ 
 
   const navLinks =[
     { id: "00", label: 'Home', path:'/'},
@@ -25,6 +25,7 @@ const Layout = ({ children }: LayoutProps ) => {
 
   return (
     <Flex direction='column' minH='100vh'  color='white'> 
+     {/* <Flex direction='column' minH='100vh'  color='white'>  */}
     {/* i'd get back to the first flex,lets work on the navbar */}
 
         {/* NavBar */}
@@ -172,8 +173,8 @@ const Layout = ({ children }: LayoutProps ) => {
         <Grid 
         flex='1'
         templateColumns={{ base: '1fr', md: '1fr'}}
-        px={{base: 4, md: 16 }}
-        py={8}
+        // px={{base: 4, md: 16 }}
+        // py={8}
         >
           {children}
         </Grid>
